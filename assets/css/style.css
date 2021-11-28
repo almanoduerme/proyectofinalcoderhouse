@@ -1,0 +1,1156 @@
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  font-family: "Poppins", sans-serif; }
+  .modal-bg .modal {
+    position: relative;
+    background-color: white;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem; }
+    .modal-bg .modal .modal-close {
+      position: absolute;
+      z-index: 999;
+      top: 10px;
+      right: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      color: white; }
+
+.bg-active {
+  visibility: visible;
+  opacity: 1; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+#index__main {
+  width: 100%;
+  height: 100vh;
+  background-color: #decbc8;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #index__main .index__section001 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #index__main .index__section001 h1 {
+      width: 30%;
+      border: 1px solid black;
+      margin-bottom: 1.6rem;
+      padding: 0.4rem 1rem; }
+    #index__main .index__section001 p {
+      width: 60%;
+      margin: 0 auto;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 1.4rem; }
+    #index__main .index__section001 a {
+      color: black; }
+    #index__main .index__section001 .index__button {
+      font-size: 1.4rem;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid black;
+      color: black;
+      background-color: #e39588; }
+    #index__main .index__section001 .index__button:hover {
+      background-color: black;
+      color: #e39588; }
+
+#singup {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #5e3e39;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; }
+  #singup h1 {
+    font-family: "Maven Pro", sans-serif;
+    margin: 2rem; }
+  #singup form {
+    width: 22%;
+    margin: 0 auto; }
+    #singup form .singup__div {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    #singup form .singup__li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem; }
+      #singup form .singup__li label {
+        font-size: 1.4rem;
+        font-family: "Poppins", sans-serif; }
+      #singup form .singup__li ::placeholder {
+        color: black; }
+      #singup form .singup__li input {
+        background-color: #5e3e39;
+        border: none;
+        border-bottom: 2px solid black;
+        color: #decbc8;
+        padding: 0.2rem;
+        font-family: "Poppins", sans-serif; }
+    #singup form .singup__button {
+      font-size: 1.4rem;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid black;
+      color: black;
+      background-color: #e39588; }
+    #singup form .singup__button:hover {
+      background-color: black;
+      color: #e39588; }
+
+.modal-bg {
+  width: 100%; }
+  .modal-bg .modal {
+    width: 60%; }
+
+#home_header {
+  width: 100%;
+  font-family: "Maven Pro", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  #home_header .logo {
+    margin: 0 4rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black; }
+  #home_header .home_nav001 {
+    margin: 0 4rem;
+    width: 40%;
+    color: black; }
+    #home_header .home_nav001 ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #home_header .home_nav001 ul a {
+        color: black;
+        font-weight: 500;
+        font-size: 1.2rem; }
+  #home_header i {
+    display: none; }
+
+.home_nav002 {
+  display: none; }
+
+.active {
+  display: block;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "Maven Pro", sans-serif; }
+  .active a {
+    color: black; }
+
+#aboutMain,
+#contactMain,
+#logout {
+  text-align: center; }
+
+.modalContainer {
+  display: none; }
+
+.modalContainerON {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(128, 128, 128, 0.884);
+  opacity: 0.9;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .modalContainerON .modalWhite a,
+  .modalContainerON .modalWhite p {
+    color: black !important; }
+
+.modalWhite {
+  width: 70%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  opacity: 1; }
+  .modalWhite i {
+    font-size: 4rem;
+    color: red; }
+  .modalWhite p,
+  .modalWhite a {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: black; }
+  .modalWhite a:hover {
+    text-decoration: underline; }
+
+.error {
+  width: 60%;
+  margin: 0 auto;
+  background-color: red;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.6rem;
+  border: 1px solid black;
+  font-weight: 700; }
+
+#newsMain {
+  text-align: center;
+  min-height: 86vh; }
+  #newsMain h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.6rem; }
+  #newsMain article {
+    margin-bottom: 2rem; }
+
+#botonNYT {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  margin-top: 1.6rem; }
+
+.dolar {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 1rem 0; }
+
+.eliminarEsteTweet {
+  text-align: end;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 0.8rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid black; }
+
+@media screen and (max-width: 576px) {
+  #index__main {
+    width: 100%;
+    margin: 0 auto; }
+    #index__main .index__section001 {
+      width: 100%; }
+      #index__main .index__section001 h1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem; }
+      #index__main .index__section001 p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin-bottom: 1rem; }
+  #singup {
+    width: 100%; }
+    #singup form {
+      width: 70%;
+      margin: 0 auto; }
+  .modal-bg {
+    width: 100%; }
+    .modal-bg .modal {
+      width: 60%; }
+  #home_header {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative; }
+    #home_header .home_nav001 {
+      display: none; }
+    #home_header i {
+      display: block;
+      font-size: 2rem;
+      padding-right: 3rem; }
+  .home_nav002 {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .home_nav002 ul {
+      position: relative; }
+  #homeMain {
+    width: 100%;
+    height: auto;
+    font-family: "Maven Pro", sans-serif; }
+    #homeMain .home_title {
+      color: black;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    #homeMain .home_section_one {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 0.6rem;
+      border: 1px solid black;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      #homeMain .home_section_one textarea {
+        width: 100%;
+        resize: none; }
+      #homeMain .home_section_one .home_escribir_tweet {
+        max-width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        flex-wrap: no-wrap; }
+      #homeMain .home_section_one .send {
+        width: 18%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.1rem 0.4rem; }
+    #homeMain .home_section_two {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1rem; }
+    #homeMain .user {
+      font-weight: 700; }
+    #homeMain .mrBoton {
+      margin-bottom: 1rem; }
+    #homeMain .tweet {
+      border: 1px solid black;
+      background-color: pink;
+      text-align: start;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem; }
+  .tuitHome {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: left; }
+  .tuitContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: start; }
+  .btn {
+    background-color: pink;
+    font-weight: 700;
+    width: 20%;
+    margin: 0.2rem; }
+  .user {
+    padding: 0 0.2rem; }
+  .tweet {
+    width: 100%;
+    background-color: pink;
+    padding: 0.2rem 0.6rem;
+    word-wrap: break-word; }
+  #footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(102, 97, 97, 0.425);
+    padding: 0.6rem 0; }
+    #footer .iconContainer {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #footer .iconContainer i {
+        color: black; }
+      #footer .iconContainer i:hover {
+        transform: scale(1.4); }
+  #aboutMain {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif; }
+    #aboutMain .aboutSectionOne {
+      width: 100%; }
+      #aboutMain .aboutSectionOne .profileImg {
+        max-width: 40%; }
+  .modalWhite {
+    width: 90%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 1; }
+    .modalWhite i {
+      font-size: 4rem;
+      color: red; }
+    .modalWhite p,
+    .modalWhite a {
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+      color: black; }
+    .modalWhite a:hover {
+      text-decoration: underline; } }
+
+@media screen and (max-width: 768px) {
+  #index__main {
+    width: 100%;
+    margin: 0 auto; }
+    #index__main .index__section001 {
+      width: 100%; }
+      #index__main .index__section001 h1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem; }
+      #index__main .index__section001 p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin-bottom: 1rem; }
+  #singup {
+    width: 100%; }
+    #singup form {
+      width: 70%;
+      margin: 0 auto; }
+  .modal-bg {
+    width: 100%; }
+    .modal-bg .modal {
+      width: 60%; }
+  #home_header {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative; }
+    #home_header .home_nav001 {
+      display: none; }
+    #home_header i {
+      display: block;
+      font-size: 2rem;
+      padding-right: 3rem; }
+  .home_nav002 {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .home_nav002 ul {
+      position: relative; }
+  #homeMain {
+    width: 100%;
+    height: auto;
+    font-family: "Maven Pro", sans-serif; }
+    #homeMain .home_title {
+      color: black;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    #homeMain .home_section_one {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 0.6rem;
+      border: 1px solid black;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      #homeMain .home_section_one textarea {
+        width: 100%;
+        resize: none; }
+      #homeMain .home_section_one .home_escribir_tweet {
+        max-width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        flex-wrap: no-wrap; }
+      #homeMain .home_section_one .send {
+        width: 18%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.1rem 0.4rem; }
+    #homeMain .home_section_two {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1rem; }
+    #homeMain .user {
+      font-weight: 700; }
+    #homeMain .mrBoton {
+      margin-bottom: 1rem; }
+    #homeMain .tweet {
+      border: 1px solid black;
+      background-color: pink;
+      text-align: start;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word; }
+  .tuitHome {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: left; }
+  .tuitContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: start; }
+  .btn {
+    background-color: pink;
+    font-weight: 700;
+    width: 20%;
+    margin: 0.2rem; }
+  .user {
+    padding: 0 0.2rem; }
+  .tweet {
+    width: 100%;
+    background-color: pink;
+    padding: 0.2rem 0.6rem; }
+  #footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(102, 97, 97, 0.425);
+    padding: 0.6rem 0; }
+    #footer .iconContainer {
+      width: 32% !important;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #footer .iconContainer i {
+        color: black; }
+      #footer .iconContainer i:hover {
+        transform: scale(1.4); }
+  #aboutMain {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif; }
+    #aboutMain .aboutSectionOne {
+      width: 100%; }
+      #aboutMain .aboutSectionOne .profileImg {
+        max-width: 40%; }
+  .modalWhite {
+    width: 90%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 1; }
+    .modalWhite i {
+      font-size: 4rem;
+      color: red; }
+    .modalWhite p,
+    .modalWhite a {
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+      color: black; }
+    .modalWhite a:hover {
+      text-decoration: underline; } }
+
+@media screen and (max-width: 992px) {
+  #index__main {
+    width: 100%;
+    margin: 0 auto; }
+    #index__main .index__section001 {
+      width: 100%; }
+      #index__main .index__section001 h1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem; }
+      #index__main .index__section001 p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin-bottom: 1.6rem; }
+  #home_header {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative; }
+    #home_header .home_nav001 {
+      display: none !important; }
+    #home_header i {
+      display: block !important;
+      font-size: 2rem;
+      padding-right: 3rem; }
+  .home_nav002 {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .home_nav002 ul {
+      position: relative; }
+  #homeMain {
+    width: 100%;
+    height: auto;
+    font-family: "Maven Pro", sans-serif; }
+    #homeMain .home_title {
+      color: black;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    #homeMain .home_section_one {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 0.6rem;
+      border: 1px solid black;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      #homeMain .home_section_one textarea {
+        width: 100%;
+        resize: none; }
+      #homeMain .home_section_one .home_escribir_tweet {
+        max-width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        flex-wrap: no-wrap; }
+      #homeMain .home_section_one .send {
+        width: 18%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.1rem 0.4rem; }
+    #homeMain .home_section_two {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1rem; }
+    #homeMain .user {
+      font-weight: 700; }
+    #homeMain .mrBoton {
+      margin-bottom: 1rem; }
+    #homeMain .tweet {
+      border: 1px solid black;
+      background-color: pink;
+      text-align: start;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word; }
+  .tuitHome {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: left; }
+  .tuitContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: start; }
+  .btn {
+    background-color: pink;
+    font-weight: 700;
+    width: 20%;
+    margin: 0.2rem; }
+  .user {
+    padding: 0 0.2rem; }
+  .tweet {
+    width: 100%;
+    background-color: pink;
+    padding: 0.2rem 0.6rem; }
+  #footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(102, 97, 97, 0.425);
+    padding: 0.6rem 0; }
+    #footer .iconContainer {
+      width: 32% !important;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #footer .iconContainer i {
+        color: black; }
+      #footer .iconContainer i:hover {
+        transform: scale(1.4); }
+  #aboutMain {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif; }
+    #aboutMain .aboutSectionOne {
+      width: 100%; }
+      #aboutMain .aboutSectionOne .profileImg {
+        max-width: 40%; } }
+
+@media screen and (max-width: 1200px) {
+  #index__main {
+    width: 100%;
+    margin: 0 auto; }
+    #index__main .index__section001 {
+      width: 100%; }
+      #index__main .index__section001 h1 {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        font-size: 5rem; }
+      #index__main .index__section001 p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        margin-bottom: 1rem; }
+  #home_header {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative; }
+    #home_header .fas {
+      display: none; }
+    #home_header .home_nav001 {
+      display: block; }
+    #home_header i {
+      display: block;
+      font-size: 2rem;
+      padding-right: 3rem; }
+  .home_nav002 {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .home_nav002 ul {
+      position: relative; }
+  #homeMain {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+  #homeMain {
+    width: 100%;
+    height: auto;
+    font-family: "Maven Pro", sans-serif; }
+    #homeMain .home_title {
+      color: black;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    #homeMain .home_section_one {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 0.6rem;
+      border: 1px solid black;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      #homeMain .home_section_one textarea {
+        width: 100%;
+        resize: none; }
+      #homeMain .home_section_one .home_escribir_tweet {
+        max-width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        flex-wrap: no-wrap; }
+      #homeMain .home_section_one .send {
+        width: 18%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.1rem 0.4rem; }
+    #homeMain .home_section_two {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1rem; }
+    #homeMain .user {
+      font-weight: 700; }
+    #homeMain .mrBoton {
+      margin-bottom: 1rem; }
+    #homeMain .tweet {
+      border: 1px solid black;
+      background-color: #dbd8e3 !important;
+      padding-top: 1rem !important;
+      text-align: start;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word; }
+    #homeMain p {
+      padding-bottom: 1rem; }
+  .tuitHome {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: left; }
+  .tuitContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: start; }
+  .btn {
+    background-color: pink;
+    font-weight: 700;
+    width: 20%;
+    margin: 0.2rem; }
+  .user {
+    padding: 0 0.2rem; }
+  .tweet {
+    width: 100%;
+    background-color: pink;
+    padding: 0.2rem 0.6rem; }
+  #footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(102, 97, 97, 0.425);
+    padding: 0.6rem 0; }
+    #footer .iconContainer {
+      width: 34%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #footer .iconContainer i {
+        color: black; }
+      #footer .iconContainer i:hover {
+        transform: scale(1.4); }
+  #aboutMain {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif; }
+    #aboutMain .aboutSectionOne {
+      width: 100%; }
+      #aboutMain .aboutSectionOne .profileImg {
+        max-width: 40%; } }
+
+@media screen and (max-width: 1400px) {
+  #home_header {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative; }
+    #home_header .fas {
+      display: none; }
+    #home_header .home_nav001 {
+      display: block;
+      width: 40%; }
+    #home_header i {
+      display: block;
+      font-size: 2rem;
+      padding-right: 3rem; }
+  .home_nav002 {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .home_nav002 ul {
+      position: relative; }
+  #homeMain {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    font-family: "Maven Pro", sans-serif; }
+    #homeMain .home_title {
+      color: black;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    #homeMain .home_section_one {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 0.6rem;
+      border: 1px solid black;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      #homeMain .home_section_one textarea {
+        width: 100%;
+        resize: none; }
+      #homeMain .home_section_one .home_escribir_tweet {
+        max-width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        flex-wrap: no-wrap; }
+      #homeMain .home_section_one .send {
+        width: 18%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.1rem 0.4rem; }
+    #homeMain .home_section_two {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1rem; }
+    #homeMain .user {
+      font-weight: 700; }
+    #homeMain .mrBoton {
+      margin-bottom: 1rem; }
+    #homeMain .tweet {
+      border: 1px solid black;
+      background-color: #dbd8e3 !important;
+      padding-top: 1rem !important;
+      text-align: start;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem;
+      word-wrap: break-word; }
+    #homeMain p {
+      padding-bottom: 1rem; }
+  .tuitHome {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: left; }
+  .tuitContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: start; }
+  .btn {
+    background-color: pink;
+    font-weight: 700;
+    width: 20%;
+    margin: 0.2rem; }
+  .user {
+    padding: 0 0.2rem; }
+  .tweet {
+    width: 100%;
+    background-color: pink;
+    padding: 0.2rem 0.6rem; }
+  #footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(102, 97, 97, 0.425);
+    padding: 0.6rem 0; }
+    #footer .iconContainer {
+      width: 14%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #footer .iconContainer i {
+        color: black; }
+      #footer .iconContainer i:hover {
+        transform: scale(1.4); }
+  #aboutMain {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif; }
+    #aboutMain .aboutSectionOne {
+      width: 100%; }
+      #aboutMain .aboutSectionOne .profileImg {
+        max-width: 40%; } }
+
+@media screen and (min-width: 1400px) {
+  #home_header {
+    width: 100%;
+    margin: 1rem 0;
+    position: relative; }
+    #home_header .fas {
+      display: none; }
+    #home_header .home_nav001 {
+      display: block;
+      width: 26%; }
+    #home_header i {
+      display: block;
+      font-size: 2rem;
+      padding-right: 3rem; }
+  .home_nav002 {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative; }
+    .home_nav002 ul {
+      position: relative; }
+  #homeMain {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+    font-family: "Maven Pro", sans-serif; }
+    #homeMain .home_title {
+      color: black;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 700; }
+    #homeMain .home_section_one {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 0.6rem;
+      border: 1px solid black;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end; }
+      #homeMain .home_section_one textarea {
+        width: 100%;
+        resize: none; }
+      #homeMain .home_section_one .home_escribir_tweet {
+        max-width: 100%;
+        height: auto;
+        padding: 0.6rem;
+        flex-wrap: no-wrap; }
+      #homeMain .home_section_one .send {
+        width: 18%;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0.1rem 0.4rem; }
+    #homeMain .home_section_two {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 1rem; }
+    #homeMain .user {
+      font-weight: 700; }
+    #homeMain .mrBoton {
+      margin-bottom: 1rem; }
+    #homeMain .tweet {
+      border: 1px solid black;
+      word-wrap: break-word;
+      background-color: #dbd8e3;
+      padding-top: 1rem;
+      text-align: start;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1rem; }
+  .tuitHome {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    text-align: left; }
+  .tuitContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: start; }
+  .btn {
+    font-weight: 700;
+    width: 20%;
+    margin: 0.2rem; }
+  .user {
+    padding: 0 0.2rem; }
+  .tweet {
+    width: 100%;
+    background-color: #dbd8e3;
+    padding: 0.2rem 0.6rem; }
+    .tweet p {
+      padding: 0.6rem 0rem !important; }
+  #footer {
+    width: 100%;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(102, 97, 97, 0.425);
+    padding: 0.6rem 0; }
+    #footer .iconContainer {
+      width: 14%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #footer .iconContainer i {
+        color: black; }
+      #footer .iconContainer i:hover {
+        transform: scale(1.4); }
+  #aboutMain {
+    margin-top: 2rem;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif; }
+    #aboutMain .aboutSectionOne {
+      width: 100%; }
+      #aboutMain .aboutSectionOne .profileImg {
+        max-width: 40%; }
+      #aboutMain .aboutSectionOne .parrafo {
+        width: 40%;
+        margin: 0.4rem auto; }
+  #newsMain {
+    width: 100%;
+    text-align: center;
+    font-size: "Poppins", sans-serif; }
+    #newsMain .newsSectionOne {
+      width: 80%;
+      margin: 0 auto; }
+      #newsMain .newsSectionOne .article {
+        width: 100%; }
+        #newsMain .newsSectionOne .article img {
+          max-width: 100%; } }
+
+.darkMode {
+  background-color: #222831; }
+  .darkMode #iconBars {
+    color: white; }
+  .darkMode a,
+  .darkMode p {
+    color: white !important; }
+  .darkMode #home_header .fa-bars {
+    color: white; }
+  .darkMode #home_header .home_nav001 li i {
+    background-color: #222831;
+    color: white; }
+  .darkMode #homeMain .home_title {
+    color: white; }
+  .darkMode #homeMain .home_section_one {
+    border: 1px solid white; }
+  .darkMode #homeMain .home_section_two .tweet {
+    background-color: #dbd8e3;
+    padding-top: 1rem; }
+  .darkMode #homeMain .home_section_two .user {
+    padding-bottom: 1rem; }
+  .darkMode #homeMain .home_section_two p {
+    color: black !important; }
+  .darkMode #newsMain h1 {
+    color: white; }
+  .darkMode .dolar {
+    background-color: #dbd8e3; }
+  .darkMode #footer {
+    background-color: black; }
+    .darkMode #footer i {
+      color: #dbd8e3; }
+  .darkMode #darkMode {
+    color: white;
+    background-color: #222831; }
+  .darkMode .modalContainerON .modalWhite a,
+  .darkMode .modalContainerON .modalWhite p {
+    color: black !important; }
+
+#darkMode {
+  color: black;
+  background-color: white; }
+
+.displayNone {
+  display: none; }
