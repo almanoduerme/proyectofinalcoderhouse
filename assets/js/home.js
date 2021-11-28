@@ -5,14 +5,39 @@ $(".fas").on("click", function () {
   $("#homeMain").toggleClass("displayNone");
 });
 
-// Bars change for cross
+// Esta función se encarga de cambiar el ícono del menu hamburguesa por una cruz.
 $("#iconBars").on("click", function () {
   $("#iconBars").toggleClass("fa-bars");
   $("#iconBars").toggleClass("fa-times");
 });
 
-// HOME => TUITAH => ON
+// Dark Mode
+let isDarkMode = false;
 
+// Se comprueba si el darkMode está activo.
+$(document).ready(function () {
+  if (localStorage.getItem("darkMode")) {
+    if (JSON.parse(localStorage.getItem("darkMode"))) {
+      darkModeFunction();
+    }
+  }
+
+  $(".darkModeBtn").on("click", darkModeFunction);
+});
+
+// Realiza los cambios de clase del darkMode.
+function darkModeFunction() {
+  $("#body").toggleClass("darkMode");
+  $("#darkMode").toggleClass("fa-moon");
+  $("#darkMode").toggleClass("fa-sun");
+  $(".btn10").toggleClass("fa-moon");
+  $(".btn10").toggleClass("fa-sun");
+
+  isDarkMode = !isDarkMode;
+  localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
+}
+
+// Array principal de tweets.
 let arrayDeTweets = [];
 
 let btnSend = document.querySelector(".send");
@@ -97,32 +122,6 @@ function eliminarTweetDelLocalStorage(tweetId) {
 }
 
 iniciarPrograma();
-
-// Dark Mode
-let isDarkMode = false;
-
-// Se comprueba si el darkMode está activo.
-$(document).ready(function () {
-  if (localStorage.getItem("darkMode")) {
-    if (JSON.parse(localStorage.getItem("darkMode"))) {
-      darkModeFunction();
-    }
-  }
-
-  $(".darkModeBtn").on("click", darkModeFunction);
-});
-
-// Realiza los cambios de clase del darkMode.
-function darkModeFunction() {
-  $("#body").toggleClass("darkMode");
-  $("#darkMode").toggleClass("fa-moon");
-  $("#darkMode").toggleClass("fa-sun");
-  $(".btn10").toggleClass("fa-moon");
-  $(".btn10").toggleClass("fa-sun");
-
-  isDarkMode = !isDarkMode;
-  localStorage.setItem("darkMode", JSON.stringify(isDarkMode));
-}
 
 // LOGOUT
 let logout = document.querySelectorAll(".logout");

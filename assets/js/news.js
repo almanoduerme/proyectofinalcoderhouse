@@ -5,7 +5,7 @@ $(".fa-bars").on("click", function () {
   $("#newsMain").toggleClass("displayNone");
 });
 
-// Bars change for cross
+// Esta función se encarga de cambiar el ícono del menu hamburguesa por una cruz.
 $("#iconBars").on("click", function () {
   $("#iconBars").toggleClass("fa-bars");
   $("#iconBars").toggleClass("fa-times");
